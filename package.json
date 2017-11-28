@@ -1,11 +1,11 @@
 {
   "name": "taas-authenticator",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "Authentication package for setting up with Trust as a service",
   "main": "index.js",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/erirei/taas-authenticator"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erirei/taas-authenticator"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
