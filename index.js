@@ -236,7 +236,7 @@ const userIsAuthenticated = req => new Promise((resolve, reject) => {
   }
 });
 
-function authenticatedMiddleware(req, res, next) {x
+function authenticatedMiddleware(req, res, next) {
   if (!_.isEmpty(req.session.passport)) {
     if(req.session.passport.user.acr < REQUIREDACR){
       switch (REQUIREDACR) {

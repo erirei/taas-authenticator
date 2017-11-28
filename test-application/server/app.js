@@ -1,15 +1,13 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import path from 'path';
-import cookieParser from 'cookie-parser';
-import { authenticationSetup, authenticatedMiddleware, users} from 'taas-authenticator';
+import { authenticationSetup, authenticatedMiddleware, users} from '../../index.js';
 
 const app = express();
 
 const settingsObject = {
-  clientId: 'yourClientId', //REQUIRED (string)
-  clientSecret: 'yourClientSecret', //REQUIRED (string)
-  issuer: 'https://login.telia.io/realms/telia', //optional (string) will default to this value 
+  clientId: '4e51740507c74006', //REQUIRED (string)
+  clientSecret: '9a038f3d-0764-4522-a3d9-42ec22379bf6', //REQUIRED (string)
+  issuer: 'https://sandbox.login.telia.io/realms/telia', //optional (string) will default to this value 
   callbackUrl:'http://localhost:4000/auth/callback', //optional will default to this value
   debug: false, //optional (boolean) will default to this value
   hostUrl: 'http://loclahost:4000/', //optional (string) will default to this value
@@ -21,7 +19,7 @@ const settingsObject = {
     failure: '/failure', //optional (string) will default to this string
     success: '/' //optional (string) will default to this string
   },
-  requiredAcr: 3 //optional (number) 
+  requiredAcr: 0 //optional (number) 
 }
 
 authenticationSetup(app, settingsObject);
