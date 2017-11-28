@@ -1,0 +1,21 @@
+{
+  "name": "taas-authenticator",
+  "version": "1.0.25",
+  "description": "Authentication package for setting up with Trust as a service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Reimer",
+  "license": "ISC",
+  "dependencies": {
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2",
+    "passport": "^0.4.0",
+    "passport-openidconnect": "0.0.2",
+    "superagent": "^3.8.1",
+    "winston": "^2.4.0"
+  }
+}
