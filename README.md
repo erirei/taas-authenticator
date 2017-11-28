@@ -74,5 +74,5 @@ app.get('/*', (req, res) => {
 ## Authenticated Middleware
 Use the middelware for endpoints which you want to protect wiht a login.
 
-##TODO's
+## TODO's
 Add support for non in-memory sessionstores
