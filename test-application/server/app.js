@@ -7,8 +7,8 @@ import { authenticationSetup, authenticatedMiddleware, users} from 'taas-authent
 const app = express();
 
 const settingsObject = {
-  clientId: '4c95d32c8b23463d', //REQUIRED (string)
-  clientSecret: '628df37d-ae0a-48ec-a956-e8418117d7bc', //REQUIRED (string)
+  clientId: 'yourClientId', //REQUIRED (string)
+  clientSecret: 'yourClientSecret', //REQUIRED (string)
   issuer: 'https://login.telia.io/realms/telia', //optional (string) will default to this value 
   callbackUrl:'http://localhost:4000/auth/callback', //optional will default to this value
   debug: false, //optional (boolean) will default to this value
