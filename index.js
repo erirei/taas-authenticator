@@ -6,7 +6,7 @@ const request = require('superagent');
 const moment = require('moment');
 const winston = require('winston');
 const jwt = require('jsonwebtoken');
-
+  
 
 const scope = ['oidc'];
 const users = [];
