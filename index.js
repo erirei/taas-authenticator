@@ -10,7 +10,7 @@ const jwt = require('jsonwebtoken');
 
 const scope = ['oidc'];
 const users = [];
-
+  
 let SUCCESSURL;
 let FAILUREURL;
 let IDPAPIURL;
